@@ -1,4 +1,5 @@
 /home/alumnot/Documentos/Biblioteca-jdbc-security/src/main/java/es/daw/bibliotecajdbc/BibliotecaJdbcApplication.java
+/home/alumnot/Documentos/Biblioteca-jdbc-security/src/main/java/es/daw/bibliotecajdbc/config/SecurityConfig.java
 /home/alumnot/Documentos/Biblioteca-jdbc-security/src/main/java/es/daw/bibliotecajdbc/config/WebConfig.java
 /home/alumnot/Documentos/Biblioteca-jdbc-security/src/main/java/es/daw/bibliotecajdbc/controller/AutorController.java
 /home/alumnot/Documentos/Biblioteca-jdbc-security/src/main/java/es/daw/bibliotecajdbc/controller/LibroController.java
