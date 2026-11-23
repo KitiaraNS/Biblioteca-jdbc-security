@@ -148,14 +148,27 @@ public class LibroRepositoryJdbc implements LibroRepository {
     }
 
     private Libro mapRow(ResultSet rs) throws SQLException {
-        Autor autor = new Autor(rs.getInt("a_id"), rs.getString("a_nombre"));
+        Autor autor = Autor.builder()
+                .id(rs.getInt("a_id"))
+                .nombre(rs.getString("a_nombre"))
+                .build();
+                //new Autor(rs.getInt("a_id"), rs.getString("a_nombre"));
 
-        return new Libro(
-                rs.getInt("id"),
-                rs.getString("isbn"),
-                rs.getString("titulo"),
-                autor,
+        return Libro.builder()
+                .id(rs.getInt("id"))
+                .isbn(rs.getString("isbn"))
+                .titulo(rs.getString("titulo"))
+                .autor(autor)
                 // getObject con el tipo: convierte DATE directamente a LocalDate
-                rs.getObject("fecha_publicacion", LocalDate.class));
+                .fechaPublicacion(rs.getObject("fecha_publicacion", LocalDate.class))
+                .build();
+
+//                new Libro(
+//                rs.getInt("id"),
+//                rs.getString("isbn"),
+//                rs.getString("titulo"),
+//                autor,
+//                // getObject con el tipo: convierte DATE directamente a LocalDate
+//                rs.getObject("fecha_publicacion", LocalDate.class));
     }
 }

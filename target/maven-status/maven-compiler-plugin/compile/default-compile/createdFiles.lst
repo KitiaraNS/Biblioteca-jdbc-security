@@ -4,6 +4,7 @@ es/daw/bibliotecajdbc/exception/RecursoNoEncontradoException.class
 es/daw/bibliotecajdbc/exception/IsbnDuplicadoException.class
 es/daw/bibliotecajdbc/repository/LibroRepositoryJdbc.class
 es/daw/bibliotecajdbc/config/WebConfig.class
+es/daw/bibliotecajdbc/model/Libro$LibroBuilder.class
 es/daw/bibliotecajdbc/exception/GlobalExceptionHandler.class
 es/daw/bibliotecajdbc/controller/LibroController.class
 es/daw/bibliotecajdbc/BibliotecaJdbcApplication.class
